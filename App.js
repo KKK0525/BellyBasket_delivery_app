@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 import { StyleSheet } from "react-native";
 import { Provider } from "react-redux";
 import getLocation from "./src/api1/getLocation"; // Import getLocation function
-import CartToast from "./src/components/CartToast/CartToast";
 import AppNavigation from "./src/navigations";
 import store from "./store";
 
@@ -27,7 +26,6 @@ export default function App() {
     <NavigationContainer>
       <Provider store={store}>
         <AppNavigation />
-        <CartToast />
       </Provider>
     </NavigationContainer>
   );
